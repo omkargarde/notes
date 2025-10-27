@@ -151,13 +151,13 @@ console.log("---------------------------------");
 arr = [1, , [2, , 3], [4, [, 5]]];
 // Expected: [1, 2, 3, 4, 5]
 
-function flatten(arr: number[]): number[] {
+function flattenAndFilter(arr: number[]): number[] {
 	// ts-ignore
-	return arr.reduce((acc: number[], curr: number) => {
+	return arr.reduce((acc: number, curr: number) => {
 		if (Array.isArray(curr)) {
-			return acc.concat(flatten(curr));
+			return acc.push(flattenAndFilter(curr));
 		} else if (curr) {
-			return acc.concat(curr);
+			return acc.push(curr);
 		}
 	}, []);
 }
@@ -165,5 +165,48 @@ function flatten(arr: number[]): number[] {
 console.log("Flatten and remove empty slots");
 console.log("Input::", arr);
 //@ts-ignore:: not important
-console.log("Output::", flatten(arr));
+console.log("Output::", flattenAndFilter(arr));
+console.log("---------------------------------");
+
+// For each number, return [num, num * 2]
+arr = [1, 2, 3];
+// Expected: [1, 2, 2, 4, 3, 6]
+// @ts-ignore
+const transformedArray = arr.flatMap((num) => [num, num * 2]);
+console.log("For each number, return [num, num * 2]");
+console.log("Input::", arr);
+console.log("Output::", transformedArray);
+console.log("---------------------------------");
+
+// Flatten all words into one array
+const sentences = ["hello world", "flat map is cool"];
+// Expected: ["hello", "world", "flat", "map", "is", "cool"]
+
+const flattenWords = sentences.flatMap((sentence) => sentence.split(" "));
+
+console.log("Flatten all words into one array");
+console.log("Input::", arr);
+console.log("Output::", flattenWords);
+console.log("---------------------------------");
+
+// Extract all unique tags from posts
+let posts = [
+	{ id: 1, tags: ["js", "react"] },
+	{ id: 2, tags: ["node", "js"] },
+	{ id: 3, tags: ["typescript", "react"] },
+];
+// Expected: ["js", "react", "node", "typescript"]
+const deduplicatedTagsList = [...new Set(posts.flatMap((post) => post.tags))];
+console.log("Extract all unique tags from posts");
+console.log("Input::", posts);
+console.log("Output::", deduplicatedTagsList);
+console.log("---------------------------------");
+
+// Flatten and sum all numbers inside nested arrays
+const data = [1, [2, 3], [4, [5, 6]]];
+// Expected: 21
+const sum = data.flat(Infinity).reduce((acc, curr) => ((acc as number) + (curr as number), 0));
+console.log("Flatten all words into one array");
+console.log("Input::", data);
+console.log("Output::", sum);
 console.log("---------------------------------");

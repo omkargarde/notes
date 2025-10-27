@@ -11,3 +11,7 @@
 ## when will you useState and useReducers
 
 ## what is the difference between useEffect and useLayoutEffect
+
+## what are callbacks, give a example(not fetch)
+
+## what is prototype

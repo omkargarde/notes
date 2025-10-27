@@ -4,7 +4,7 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"dev": "bun --hot src/array.ts"
+		"dev": "bun --hot src/promise.ts"
 	},
 	"devDependencies": {
 		"@types/bun": "latest"
