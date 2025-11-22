@@ -37,36 +37,37 @@ console.log(`some string ${a+10}`)
 a template literal is used to print out string to console while
 template literal type are used for to represent a specific string value
 
-- what are generics?
-  generics are used to make a function, class, interface reusable
-  without losing the type safety.
+## what are generics?
 
-  suppose i have a function which i want to make reusable with multiple types
+generics are used to make a function, class, interface reusable
+without losing the type safety.
 
-  ```TypeScript
-  function identity(arg: number): number {
-  return arg;
-  }
-  ```
+suppose i have a function which i want to make reusable with multiple types
 
-  this function works with _number_ type.
-  this can be rewritten with _any_ type but will will lose the type safety.
+```TypeScript
+function identity(arg: number): number {
+return arg;
+}
+```
 
-  ```TypeScript
-  function identity(arg: any): any {
-  return arg;
-  }
-  ```
+this function works with _number_ type.
+this can be rewritten with _any_ type but will will lose the type safety.
 
-  to make this function reusable without losing type safety generics can used.
+```TypeScript
+function identity(arg: any): any {
+return arg;
+}
+```
 
-  ```TypeScript
-  function identity<T>(arg: T): T {
-  return arg;
-  }
+to make this function reusable without losing type safety generics can used.
 
-  const variable = identity<string>("string");
-  ```
+```TypeScript
+function identity<T>(arg: T): T {
+return arg;
+}
+
+const variable = identity<string>("string");
+```
 
 ## what are intersection type?
 
@@ -177,7 +178,7 @@ const double = multiplier(2);
 console.log(double(5)); // 10
 ```
 
-## how do optime react application
+## how do optimize react application
 
 ## how do you find issues with react performance
 
@@ -196,3 +197,23 @@ console.log(double(5)); // 10
 ## when do you use redux, what are the drawbacks
 
 ## what is the architecture behind redux,flux
+
+## what are css selectors
+
+## what is css box model
+
+## what is aria label
+
+## what is sr-only class
+
+## what is difference between id and class in html
+
+## how do you display list of data in html
+
+## what are modules in angular
+
+## what are component in angular
+
+## what are pipes in angular
+
+## what is data binding in angular

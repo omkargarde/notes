@@ -29,3 +29,5 @@
 ## how do write business logic and presentation logic of components
 
 ## given string "some things some" replace some with "s"
+
+## what are pure component
