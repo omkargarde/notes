@@ -1,5 +1,6 @@
 const promise = new Promise((resolve, reject) => {
 	const random = Math.random() > 0.5;
+	console.assert(!random, "failure");
 	if (random) {
 		resolve("success");
 	}
