@@ -16,7 +16,11 @@
 
 ## what if custom hook are not prefixed with use
 
+## what are rules of react
+
 ## diff between shallow copy and deep copy
+
+## how to do deep copy javascript
 
 ## explain your folder structure
 
@@ -30,6 +34,8 @@
 
 ## given string "some things some" replace some with "s"
 
-## what are pure component
+## what are pure component (in functional component it means memoized component)
 
 ## what is currying
+
+## diff between debounce and throttle
