@@ -31,3 +31,5 @@
 ## given string "some things some" replace some with "s"
 
 ## what are pure component
+
+## what is currying

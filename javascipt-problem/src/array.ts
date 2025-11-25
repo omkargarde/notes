@@ -113,7 +113,7 @@ const users = [
 const namesOfActiveUsers = users.filter((user) => user.active).map((user) => user.name);
 console.log("Use map() + filter() to get names of active users only.");
 console.log("Input::", users);
-console.log("Output::", occurrencesOfLetters);
+console.log("Output::", namesOfActiveUsers);
 console.log("---------------------------------");
 
 // Flatten this nested array into a single array using flat.

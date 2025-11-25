@@ -1,6 +1,9 @@
 words = [
     "axios",
+    "hmr",
     "inp",
+    "linecap",
+    "linejoin",
     "lyca",
     "mavenrick",
     "nums",
