@@ -39,3 +39,17 @@
 ## what is currying
 
 ## diff between debounce and throttle
+
+## what is data bind
+
+## why is react one way data binding
+
+## write a react custom hook with its own state and it should return "on" or "off" when toggled
+
+## what is redux
+
+## what are the components of redux
+
+## what are ways of writing redux
+
+## what is react fiber
