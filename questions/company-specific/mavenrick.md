@@ -30,10 +30,14 @@
 28. Difference between let ,const and var keyword?
 29. What is Hoisting?
 30. What is macro-task and micro-task?
-31. console.log("A");
-    setTimeout(()=>console.log('B'),0);
-    Promise.resolve().then(()=>console.log("C"));
+
+31. ```javascript
+    console.log("A");
+    setTimeout(() => console.log("B"), 0);
+    Promise.resolve().then(() => console.log("C"));
     console.log("D");
+    ```
+
 32. What are Event Loops?
 33. How does React batch state updates?
 34. Explain stale props & tearing problem
@@ -47,3 +51,7 @@
 42. When ids useLayoutEffect dangerous?
 43. How can we avoid Suspense Waterfalls?
 44. Difference between useMemo and memoize?
+
+```
+
+```
