@@ -53,3 +53,25 @@
 ## what are ways of writing redux
 
 ## what is react fiber
+
+1. Difference between let ,const and var keyword?
+2. What is Hoisting?
+3. What is macro-task and micro-task?
+   4)console.log("A");
+   setTimeout(()=>console.log('B'),0);
+   Promise.resolve().then(()=>console.log("C"));
+   console.log("D");
+4. What are Event Loops?
+
+5. How does React batch state updates?
+6. Explain stale props & tearing problem
+7. Why Context causes performance issues?
+8. Explain Concurrent Rendering & useTransition
+9. Explain the render phase and commit phase
+10. Explain useSyncExternalStore and why it Exists?
+11. WWill async errors be caught in Error Boundaries?
+12. What if our Data Fetching is Sentential not Parallel?
+13. What is the difference between using useEffect and useLayoutEffect?
+14. When ids useLayoutEffect dangerous?
+15. How can we avoid Suspense Waterfalls?
+16. Difference between useMemo and memoize?
