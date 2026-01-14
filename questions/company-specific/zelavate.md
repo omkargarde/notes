@@ -217,3 +217,12 @@ console.log(double(5)); // 10
 ## what are pipes in angular
 
 ## what is data binding in angular
+
+## what is reactor pattern
+
+## what is repl
+
+## what is optional chaining
+
+## node js event loop
+

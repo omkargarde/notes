@@ -51,6 +51,8 @@
 42. When ids useLayoutEffect dangerous?
 43. How can we avoid Suspense Waterfalls?
 44. Difference between useMemo and memoize?
+45. what are css selector
+46. what are css box model
 
 ```
 
