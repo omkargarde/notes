@@ -54,7 +54,5 @@
 45. what are css selector
 46. what are css box model
 47. react state updates are asynchronous
+48. What is React Fiber and how is it an improvement over the previous approach?
 
-```
-
-```
