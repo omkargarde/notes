@@ -53,6 +53,7 @@
 44. Difference between useMemo and memoize?
 45. what are css selector
 46. what are css box model
+47. react state updates are asynchronous
 
 ```
 
