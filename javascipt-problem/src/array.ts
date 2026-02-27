@@ -151,21 +151,21 @@ console.log("---------------------------------");
 arr = [1, , [2, , 3], [4, [, 5]]];
 // Expected: [1, 2, 3, 4, 5]
 
-function flattenAndFilter(arr: number[]): number[] {
-  return arr.reduce((acc: number, curr: number) => {
-    if (Array.isArray(curr)) {
-      return acc.push(flattenAndFilter(curr));
-    } else if (curr) {
-      return acc.push(curr);
-    }
-  }, []);
-}
+// function flattenAndFilter(arr: number[]) {
+//   return arr.reduce((acc, curr) => {
+//     if (Array.isArray(curr)) {
+//       return acc.push(flattenAndFilter(curr));
+//     } else if (curr) {
+//       return acc.push(curr);
+//     }
+//   }, []);
+// }
 
-console.log("Flatten and remove empty slots");
-console.log("Input::", arr);
-//@ts-ignore:: not important
-console.log("Output::", flattenAndFilter(arr));
-console.log("---------------------------------");
+// console.log("Flatten and remove empty slots");
+// console.log("Input::", arr);
+// //@ts-ignore:: not important
+// console.log("Output::", flattenAndFilter(arr));
+// console.log("---------------------------------");
 
 // For each number, return [num, num * 2]
 arr = [1, 2, 3];
@@ -208,4 +208,26 @@ const sum = data.flat(Infinity).reduce((acc, curr) => ((acc as number) + (curr a
 console.log("Flatten all words into one array");
 console.log("Input::", data);
 console.log("Output::", sum);
+console.log("---------------------------------");
+
+// return only duplicates
+const  arr_of_deplicates = [1,2,3,4,5,2,3]
+// Expected: [2,3]
+const duplicates: number[] = arr_of_deplicates
+	.filter((duplicate, index) =>
+	arr_of_deplicates.indexOf(duplicate) !== index)
+console.log("return only duplicates");
+console.log("Input::", arr_of_deplicates);
+console.log("Output::", duplicates);
+console.log("---------------------------------");
+
+// return only non-duplicates
+const  arr_of_deplicates_2 = [1,2,3,4,5,2,3]
+// Expected: [2,3]
+const duplicates_2: number[] = arr_of_deplicates_2
+	.filter((duplicate, index) =>
+	arr_of_deplicates_2.indexOf(duplicate) === index)
+console.log("return only non-duplicates");
+console.log("Input::", arr_of_deplicates_2);
+console.log("Output::", duplicates_2);
 console.log("---------------------------------");
