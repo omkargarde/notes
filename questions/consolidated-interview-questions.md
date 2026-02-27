@@ -51,6 +51,8 @@ console.log("D");
 - How to do deep copy in JavaScript.
 - What is prototype?
 - What are higher-order functions?
+- return duplicates from array
+- return non-duplicates from array
 
 ## JavaScript – ES6+
 
@@ -92,6 +94,8 @@ console.log("D");
 - How do you fix unnecessary re-renders?
 - How do you optimize a React application?
 - How do you optimize without web frameworks?
+- How would you consume external API data in a React component?
+- How do you pass data between React components and reuse components?
 
 ## Redux & State Management
 

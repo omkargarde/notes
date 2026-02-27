@@ -48,10 +48,10 @@ console.log("---------------------------------");
 nums = [5, 10, 15];
 // Expected: 30
 const sumOfEvenNums = nums.reduce((acc, curr) => {
-	if (curr % 2) {
-		return acc;
-	}
-	return acc + curr;
+  if (curr % 2) {
+    return acc;
+  }
+  return acc + curr;
 }, 0);
 console.log("Use reduce() to find the total sum of even numbers.");
 console.log("Input::", nums);
@@ -78,9 +78,9 @@ console.log("---------------------------------");
 
 // Use some() to see if any product has discount > 30%.
 const products = [
-	{ name: "Shoes", discount: 10 },
-	{ name: "Watch", discount: 35 },
-	{ name: "Bag", discount: 20 },
+  { name: "Shoes", discount: 10 },
+  { name: "Watch", discount: 35 },
+  { name: "Bag", discount: 20 },
 ];
 // Expected: true
 const areSomeProductHeavylyDiscounted = products.some((product) => product.discount > 30);
@@ -93,8 +93,8 @@ console.log("---------------------------------");
 const letters = ["a", "b", "a", "c", "b", "a"];
 // Expected: { a: 3, b: 2, c: 1 }
 const occurrencesOfLetters = letters.reduce<Record<string, number>>((acc, curr) => {
-	acc[curr] = (acc[curr] || 0) + 1;
-	return acc;
+  acc[curr] = (acc[curr] || 0) + 1;
+  return acc;
 }, {});
 
 console.log("Use reduce() to count occurrences of each letter.");
@@ -104,9 +104,9 @@ console.log("---------------------------------");
 
 // Use map() + filter() to get names of active users only.
 const users = [
-	{ name: "Omkar", active: true },
-	{ name: "Raj", active: false },
-	{ name: "Mira", active: true },
+  { name: "Omkar", active: true },
+  { name: "Raj", active: false },
+  { name: "Mira", active: true },
 ];
 // Expected: ["Omkar", "Mira"]
 
@@ -131,14 +131,14 @@ arr = [1, [2, 3], [4, [5, 6]]];
 // Expected: [1, 2, 3, 4, [5, 6]]
 
 function flatten(arr: number[]): number[] {
-	// ts-ignore
-	return arr.reduce((acc: number[], curr: number) => {
-		if (Array.isArray(curr)) {
-			return acc.concat(flatten(curr));
-		} else {
-			return acc.concat(curr);
-		}
-	}, []);
+  // ts-ignore
+  return arr.reduce((acc: number[], curr: number) => {
+    if (Array.isArray(curr)) {
+      return acc.concat(flatten(curr));
+    } else {
+      return acc.concat(curr);
+    }
+  }, []);
 }
 console.log(" Flatten this nested array into a single array without flat.");
 console.log("Input::", arr);
@@ -152,14 +152,13 @@ arr = [1, , [2, , 3], [4, [, 5]]];
 // Expected: [1, 2, 3, 4, 5]
 
 function flattenAndFilter(arr: number[]): number[] {
-	// ts-ignore
-	return arr.reduce((acc: number, curr: number) => {
-		if (Array.isArray(curr)) {
-			return acc.push(flattenAndFilter(curr));
-		} else if (curr) {
-			return acc.push(curr);
-		}
-	}, []);
+  return arr.reduce((acc: number, curr: number) => {
+    if (Array.isArray(curr)) {
+      return acc.push(flattenAndFilter(curr));
+    } else if (curr) {
+      return acc.push(curr);
+    }
+  }, []);
 }
 
 console.log("Flatten and remove empty slots");
@@ -191,9 +190,9 @@ console.log("---------------------------------");
 
 // Extract all unique tags from posts
 let posts = [
-	{ id: 1, tags: ["js", "react"] },
-	{ id: 2, tags: ["node", "js"] },
-	{ id: 3, tags: ["typescript", "react"] },
+  { id: 1, tags: ["js", "react"] },
+  { id: 2, tags: ["node", "js"] },
+  { id: 3, tags: ["typescript", "react"] },
 ];
 // Expected: ["js", "react", "node", "typescript"]
 const deduplicatedTagsList = [...new Set(posts.flatMap((post) => post.tags))];
