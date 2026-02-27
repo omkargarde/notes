@@ -151,22 +151,6 @@ console.log("---------------------------------");
 arr = [1, , [2, , 3], [4, [, 5]]];
 // Expected: [1, 2, 3, 4, 5]
 
-// function flattenAndFilter(arr: number[]) {
-//   return arr.reduce((acc, curr) => {
-//     if (Array.isArray(curr)) {
-//       return acc.push(flattenAndFilter(curr));
-//     } else if (curr) {
-//       return acc.push(curr);
-//     }
-//   }, []);
-// }
-
-// console.log("Flatten and remove empty slots");
-// console.log("Input::", arr);
-// //@ts-ignore:: not important
-// console.log("Output::", flattenAndFilter(arr));
-// console.log("---------------------------------");
-
 // For each number, return [num, num * 2]
 arr = [1, 2, 3];
 // Expected: [1, 2, 2, 4, 3, 6]
